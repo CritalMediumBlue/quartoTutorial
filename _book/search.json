@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Quarto skills presentation",
     "section": "",
-    "text": "Preface\nQuarto is a program that allows you to create documents, reports, presentations, and websites using a single source file format. This allows you to write your content in a single format and then render it to multiple output formats, such as HTML, PDF, and Microsoft Word.",
+    "text": "Preface\nQuarto is an open-source publishing tool that turns a single source file into professional documents, presentations, and websites. It allows you to write your content once, and instantly export it to HTML, PDF, or Microsoft Word.\nThis book is a collection of notes and examples that I have found useful when using Quarto. It is not intended to be a comprehensive guide, but rather a reference for myself and others who are learning to use this tool. This book itself is written in Quarto, and you can find the source code on GitHub.",
     "crumbs": [
       "Preface"
     ]
@@ -12,11 +12,11 @@
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "Prerequisites",
+    "title": "Installation",
     "section": "",
-    "text": "If you run quarto -v in your terminal, you will most likely get a response similar to\nuser@office:~$ quarto -v\nbash: quarto: command not found\nThis means that Quarto is not installed on your system. To install Quarto, you can follow the instructions provided in the official Quarto documentation.",
+    "text": "Quarto\nTo check whether Quarto is already installed, run:\nIf you see command not found, follow the official Quarto documentation to install it. Once installed, the same command should return the version number:",
     "crumbs": [
-      "Prerequisites"
+      "Installation"
     ]
   },
   {
@@ -37,6 +37,46 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "intro.html#add-some-code-to-your-document",
+    "href": "intro.html#add-some-code-to-your-document",
+    "title": "Installation",
+    "section": "Add some code to your document",
+    "text": "Add some code to your document\nTo add a python code block to your Quarto document, you can use code blocks like this:\n# My First Quarto Document\nThis is a simple Quarto document\n\n```{python}\nprint(3+3)\n```\nNow you can try rendering the document again using the same command:\nquarto preview my_notes.qmd\nYou will notice an error like:\nModuleNotFoundError: No module named 'yaml'\nPython 3 installation:\n{}\n\nJupyter is not available in this Python installation. \nInstall with python3 -m pip install jupyter\nWhen you render a Quarto document containing Python code blocks, Quarto needs an “engine” to execute the code and capture the results to insert into the final document, for this reason, Quarto requires Jupyter to be installed in your Python environment. You can do this by installing Jupyter in your Python environment. So, first create and activate a virtual environment with:\npython3 -m venv myenv\nsource myenv/bin/activate\n\n\n\n\n\n\nNoteWindows users\n\n\n\n\n\nWindows users can activate the virtual environment in PowerShell with:\nmyenv\\Scripts\\Activate.ps1\nor in Command Prompt (cmd) with:\nmyenv\\Scripts\\activate.bat\n\n\n\nand then install Jupyter with:\npython3 -m pip install jupyter\nand then try rendering the document again using the same command:\nquarto preview my_notes.qmd",
+    "crumbs": [
+      "Installation"
+    ]
+  },
+  {
+    "objectID": "intro.html#quarto",
+    "href": "intro.html#quarto",
+    "title": "Installation",
+    "section": "",
+    "text": "quarto -v\n\n\nuser@office:~$ quarto -v\n1.10.18",
+    "crumbs": [
+      "Installation"
+    ]
+  },
+  {
+    "objectID": "intro.html#python-and-jupyter",
+    "href": "intro.html#python-and-jupyter",
+    "title": "Installation",
+    "section": "Python and Jupyter",
+    "text": "Python and Jupyter\nQuarto uses Jupyter to execute Python code blocks and capture their output. Create a virtual environment and install Jupyter into it:\npython3 -m venv myenv\nsource myenv/bin/activate\npython3 -m pip install jupyter\n\n\n\n\n\n\nNoteWindows users\n\n\n\n\n\nActivate the virtual environment in PowerShell with:\nmyenv\\Scripts\\Activate.ps1\nor in Command Prompt with:\nmyenv\\Scripts\\activate.bat\nThen install Jupyter the same way: python3 -m pip install jupyter",
+    "crumbs": [
+      "Installation"
+    ]
+  },
+  {
+    "objectID": "intro.html#adding-python-code",
+    "href": "intro.html#adding-python-code",
+    "title": "Installation",
+    "section": "Adding Python code",
+    "text": "Adding Python code\nTo include executable Python code, use a {python} code block:\n# My First Quarto Document\nThis is a simple Quarto document\n\n```{python}\nprint(3+3)\n```\nSave the file — the preview will refresh automatically and display the output below the code block.",
+    "crumbs": [
+      "Installation"
     ]
   }
 ]

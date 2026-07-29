@@ -1,3 +1,5 @@
 # Preface {.unnumbered}
 
-Quarto is a program that allows you to create documents, reports, presentations, and websites using a single source file format. This allows you to write your content in a single format and then render it to multiple output formats, such as HTML, PDF, and Microsoft Word. 
+Quarto is an open-source publishing tool that turns a single source file into professional documents, presentations, and websites. It allows you to write your content once, and instantly export it to HTML, PDF, or Microsoft Word. 
+
+This book is a collection of notes and examples that I have found useful when using Quarto. It is not intended to be a comprehensive guide, but rather a reference for myself and others who are learning to use this tool. This book itself is written in Quarto, and you can find the source code on [GitHub](https://github.com/CritalMediumBlue/quartoTutorial).

@@ -1,10 +1,81 @@
-# Prerequisites {.unnumbered}
+---
+format:
+  html:
+    code-copy: true
+    css: styles.css
+---
 
-If you run `quarto -v` in your terminal, you will most likely get a response similar to 
+# Installation {.unnumbered}
+
+## Quarto
+
+To check whether Quarto is already installed, run:
 
 ```bash
-user@office:~$ quarto -v
-bash: quarto: command not found
+quarto -v
 ```
 
-This means that Quarto is not installed on your system. To install Quarto, you can follow the instructions provided in the [official Quarto documentation](https://quarto.org/docs/get-started/).
+If you see `command not found`, follow the [official Quarto documentation](https://quarto.org/docs/get-started/) to install it. Once installed, the same command should return the version number:
+
+::: {data-code-copy="false"}
+```bash
+user@office:~$ quarto -v
+1.10.18
+```
+:::
+
+## Python and Jupyter
+
+Quarto uses Jupyter to execute Python code blocks and capture their output. Create a virtual environment and install Jupyter into it:
+
+```bash
+python3 -m venv myenv
+source myenv/bin/activate
+python3 -m pip install jupyter
+```
+
+:::{.callout-note collapse="true" title="Windows users"}
+Activate the virtual environment in PowerShell with:
+```powershell
+myenv\Scripts\Activate.ps1
+```
+or in Command Prompt with:
+```cmd
+myenv\Scripts\activate.bat
+```
+Then install Jupyter the same way: `python3 -m pip install jupyter`
+:::
+
+# Writing your first document
+
+Create a new file with the extension `.qmd`, for example `my_notes.qmd`, and add the following content:
+
+```markdown
+# My First Quarto Document
+This is a simple Quarto document
+```
+
+Preview it in your browser by running:
+
+```bash
+quarto preview my_notes.qmd
+```
+
+This opens a live-reloading preview in your default browser.
+
+## Adding Python code
+
+To include executable Python code, use a `{python}` code block:
+
+````markdown
+# My First Quarto Document
+This is a simple Quarto document
+
+```{{python}}
+print(3+3)
+```
+````
+
+Save the file — the preview will refresh automatically and display the output below the code block.
+
+

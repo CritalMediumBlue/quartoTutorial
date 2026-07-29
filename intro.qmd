@@ -1,0 +1,10 @@
+# Prerequisites {.unnumbered}
+
+If you run `quarto -v` in your terminal, you will most likely get a response similar to 
+
+```bash
+user@office:~$ quarto -v
+bash: quarto: command not found
+```
+
+This means that Quarto is not installed on your system. To install Quarto, you can follow the instructions provided in the [official Quarto documentation](https://quarto.org/docs/get-started/).

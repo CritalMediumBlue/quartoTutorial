@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto skills presentation",
+    "section": "",
+    "text": "Preface\nQuarto is a program that allows you to create documents, reports, presentations, and websites using a single source file format. This allows you to write your content in a single format and then render it to multiple output formats, such as HTML, PDF, and Microsoft Word.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "Prerequisites",
+    "section": "",
+    "text": "If you run quarto -v in your terminal, you will most likely get a response similar to\nuser@office:~$ quarto -v\nbash: quarto: command not found\nThis means that Quarto is not installed on your system. To install Quarto, you can follow the instructions provided in the official Quarto documentation.",
+    "crumbs": [
+      "Prerequisites"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
